@@ -1,6 +1,5 @@
 .app {
-  height: 100vh;
-  background-color: #f6f8ff;
+  background-color: var(--backgroundSecondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +19,7 @@
   display: flex;
   align-items: center;
   background-color: transparent;
+  color: var(--button-color);
 }
 
 .icon {

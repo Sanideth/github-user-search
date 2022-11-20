@@ -1,8 +1,12 @@
 import classes from "./CredentialComponent.module.css";
 
 const CredentialComponent = ({ type, text, icon, link, weird }) => {
+  const opacity = text === "Not Available";
   return (
-    <div className={classes.credentialComponent}>
+    <div
+      className={classes.credentialComponent}
+      style={opacity ? { opacity: ".5" } : {}}
+    >
       {icon}
       {type === "link" ? (
         <a
@@ -13,7 +17,7 @@ const CredentialComponent = ({ type, text, icon, link, weird }) => {
           {text}
         </a>
       ) : (
-        <p className={classes.credentialText}>{text}</p>
+        <p>{text}</p>
       )}
     </div>
   );

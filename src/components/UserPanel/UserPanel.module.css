@@ -1,13 +1,10 @@
 .userPanel {
-  background: #fefefe;
+  background: var(--background-color);
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   border-radius: 15px;
   padding: 4.8rem;
   display: flex;
   gap: 3.7rem;
-}
-
-.infoContainer {
 }
 
 .headerContainer {
@@ -17,14 +14,14 @@
 }
 
 .heading {
+  flex: 1;
 }
 .ghLink {
   margin-bottom: 2rem;
   display: block;
+  color: #0079ff;
 }
 
-.registrationDate {
-}
 .bio {
   margin-bottom: 3.2rem;
 }
@@ -33,7 +30,7 @@
   display: flex;
   padding: 1.5rem 3.2rem 1.7rem 3.2rem;
   gap: 8rem;
-  background: #f6f8ff;
+  background: var(--backgroundSecondary-color);
   border-radius: 10px;
   margin-bottom: 4rem;
 }
@@ -55,13 +52,11 @@
 
   .ghLink {
     margin-bottom: 0.2rem;
+    width: 6rem;
   }
   .avatarContainer {
     position: absolute;
   }
-}
-
-@media only screen and (max-width: 750px) {
   .credentialsContainer {
     grid-template-columns: 1fr;
   }
@@ -77,5 +72,8 @@
   .statsContainer {
     gap: 1rem;
     justify-content: space-around;
+  }
+  .userPanel {
+    padding: 2.8rem;
   }
 }
