@@ -5,6 +5,7 @@ const SearchComponent = () => {
     <div className={classes.searchComponent}>
       <IconSearch className={classes.icon} />
       <input type="text" className={classes.inputField} />
+      <p className={classes.error}>No Result</p>
       <button className={classes.button}>Search</button>
     </div>
   );
