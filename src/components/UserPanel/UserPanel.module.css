@@ -1,27 +1,81 @@
 .userPanel {
-}
-
-.avatarContainer {
+  background: #fefefe;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border-radius: 15px;
+  padding: 4.8rem;
+  display: flex;
+  gap: 3.7rem;
 }
 
 .infoContainer {
 }
 
 .headerContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
 }
 
 .heading {
 }
 .ghLink {
+  margin-bottom: 2rem;
+  display: block;
 }
 
 .registrationDate {
 }
 .bio {
+  margin-bottom: 3.2rem;
 }
 
 .statsContainer {
+  display: flex;
+  padding: 1.5rem 3.2rem 1.7rem 3.2rem;
+  gap: 8rem;
+  background: #f6f8ff;
+  border-radius: 10px;
+  margin-bottom: 4rem;
 }
 
 .credentialsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2rem;
+  grid-column-gap: 6rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .headerContainer {
+    margin-left: 20rem;
+    flex-direction: column;
+    margin-bottom: 3.8rem;
+    margin-top: 1rem;
+  }
+
+  .ghLink {
+    margin-bottom: 0.2rem;
+  }
+  .avatarContainer {
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .credentialsContainer {
+    grid-template-columns: 1fr;
+  }
+  .statsContainer {
+    gap: 5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .credentialsContainer {
+    grid-template-columns: 1fr;
+  }
+  .statsContainer {
+    gap: 1rem;
+    justify-content: space-around;
+  }
 }

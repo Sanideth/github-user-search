@@ -9,8 +9,8 @@ function App() {
       <div className={classes.appContainer}>
         <div className={classes.header}>
           <h1>devfinder</h1>
-          <button>
-            Dark <IconMoon />
+          <button className={classes.searchButton}>
+            Dark <IconMoon className={classes.icon} />
           </button>
         </div>
         <SearchComponent />

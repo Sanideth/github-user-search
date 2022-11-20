@@ -18,6 +18,37 @@ body {
   line-height: 2.5rem;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 3.9rem;
+}
+h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+}
+p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #4b6a9b;
+}
 input {
   width: 100%;
+  outline: none;
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
 }

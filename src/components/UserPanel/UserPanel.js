@@ -14,31 +14,35 @@ const UserPanel = () => {
       </div>
       <div className={classes.infoContainer}>
         <div className={classes.headerContainer}>
-          <h1>The octocat</h1>
+          <div>
+            <h1>The octocat</h1>
+            <a href="https://www.somewhere.com" className={classes.ghLink}>
+              @octocat
+            </a>
+          </div>
+
           <p className={classes.registrationDate}>21 January</p>
         </div>
-        <a href="https://www.somewhere.com">@octocat</a>
+
         <p className={classes.bio}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rem
           nemo at. Eos, provident praesentium quaerat dolor iure, harum nostrum
           vel, labore quas placeat dicta neque? Numquam animi eveniet odio.
         </p>
         <div className={classes.statsContainer}>
-          <StatComponent text="Repos" number={100} />
-          <StatComponent text="Followers" number={100} />
-          <StatComponent text="Following" number={100} />
+          <StatComponent text="Repos" stat={100} />
+          <StatComponent text="Followers" stat={100} />
+          <StatComponent text="Following" stat={100} />
         </div>
         <div className={classes.credentialsContainer}>
           <CredentialComponent icon={<IconLocation />} text="San Fransisco" />
-          <CredentialComponent
-            icon={<IconTwitter />}
-            text="data not available"
-          />
+          <CredentialComponent icon={<IconTwitter />} text="not available" />
           <CredentialComponent
             icon={<IconLink />}
             text="https://github.blog"
             link="https://github.blog"
             type="link"
+            weird={true}
           />
           <CredentialComponent
             icon={<IconCompany />}

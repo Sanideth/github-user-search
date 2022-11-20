@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 }
 .appContainer {
   width: 73rem;
@@ -12,4 +13,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.searchButton {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.icon {
+  margin-left: 1.6rem;
 }
